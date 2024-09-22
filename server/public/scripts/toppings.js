@@ -31,7 +31,7 @@ const renderToppings = async () => {
             bottomContainer.appendChild(audience)
 
             const link = document.createElement('a')
-            link.textContent = 'Read More >'
+            link.textContent = 'Details'
             link.setAttribute('role', 'button')
             link.href = `/toppings/${topping.id}`
             bottomContainer.appendChild(link)

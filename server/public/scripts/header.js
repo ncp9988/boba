@@ -27,7 +27,7 @@ headerRight.className = 'header-right';
 
 // Create a button element for Home and register a click event
 const headerButton = document.createElement('button');  // Corrected to 'button' instead of 'Home'
-headerButton.textContent = 'Home';
+headerButton.textContent = '⌂';
 
 headerButton.addEventListener('click', function() {
     window.location = '/';

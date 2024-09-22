@@ -4,12 +4,20 @@
   font-family: Avenir, Helvetica, sans-serif;
   color: black;
 }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  background-color: #f8f8f8; /* Optional: Set background color so it's visible when scrolling */
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2); /* Optional: Add shadow for better visibility */
+}
 
 /* Header CSS */
 .header-container {
   overflow: hidden;
   padding: 20px 10px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 .header-left {
@@ -55,22 +63,27 @@ width: 80px;
 /* Home page CSS */
 
 main {
+  margin-top: 170px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: url('./public/boba.jpg');
+  background-size: auto; /* Change this if you want the original size */
+  background-position: center; /* Center horizontally */
+  background-repeat: repeat-y;
 }
 
 .card {
   width: 300px;
   height: 400px;
-  background: transparent;
+  background: white;
   border-style: solid;
-  border-width: 3px;
-  border-color: rgb(3, 7, 89);
-  border-radius: 0.3rem;
+  border-width: 5px;
+  border-color: rgba(6, 41, 55, 0.2);
+  border-radius: 1.3rem;
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.057);
-  margin-top: 0px;
+  margin-top: 30px;
   margin-left: 20px;
   margin-right: 40px;
   margin-bottom: 60px;
@@ -78,13 +91,16 @@ main {
 
 .card img {
   height: 100%;
+  border-color: rgba(6, 41, 55, 0.2);
+  border-radius: 1.3rem;
+
 }
 
 .top-container {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 250px;
+  height: 230px;
 }
 
 .bottom-container {
@@ -102,7 +118,7 @@ main {
 }
 
 .bottom-container a {
-  color: rgb(228, 16, 133);
+  color: rgb(24, 114, 158);
   text-decoration: none;
 }
 
@@ -142,14 +158,24 @@ main {
 }
 
 .image-container {
-  padding-left: 100px;
+  padding-left: 120px;
   width: 40vw;
+  
 }
 
 .image-container img {
-  width: 80%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 50%;
+  border-radius: 50%; /* Makes the image circular */
+  border: 5px solid rgba(6, 41, 55, 0.2);
 }
 
 .topping-details {
   width: 45vw;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: rgb(246, 239, 227);
+  font-size: large;
+  
 }
