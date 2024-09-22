@@ -1,5 +1,4 @@
 const renderToppings = async () => {
-    
     const response = await fetch('/toppings')
     const data = await response.json()
 

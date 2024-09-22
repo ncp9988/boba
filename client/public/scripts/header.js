@@ -15,7 +15,7 @@ headerLogo.src = '/logo.png';
 
 // Create an h1 element for the title and set its text content
 const headerTitle = document.createElement('h1');
-headerTitle.textContent = 'UnEarthed';
+headerTitle.textContent = 'Lion Sugar';
 
 // Append the logo and title to the left header div
 headerLeft.appendChild(headerLogo);

@@ -1,13 +1,12 @@
 const renderToppings = async () => {
-    
-    const response = await fetch('/gifts')
+    const response = await fetch('/toppings')
     const data = await response.json()
 
     const mainContent = document.getElementById('main-content')
 
     if (data) {
 
-        data.map(gift => {
+        data.map(topping => {
             const card = document.createElement('div')
             card.classList.add('card')
 
@@ -17,24 +16,24 @@ const renderToppings = async () => {
             const bottomContainer = document.createElement('div')
             bottomContainer.classList.add('bottom-container')
 
-            topContainer.style.backgroundImage = `url(${gift.image})`
+            topContainer.style.backgroundImage = `url(${topping.image})`
 
             const name = document.createElement('h3')
-            name.textContent = gift.name
+            name.textContent = topping.name
             bottomContainer.appendChild(name)
 
             const pricePoint = document.createElement('p')
-            pricePoint.textContent = 'Price: ' + gift.pricePoint
+            pricePoint.textContent = 'Price: ' + topping.pricePoint
             bottomContainer.appendChild(pricePoint)
 
             const audience = document.createElement('p')
-            audience.textContent = 'Great For: ' + gift.audience
+            audience.textContent = 'Great For: ' + topping.audience
             bottomContainer.appendChild(audience)
 
             const link = document.createElement('a')
             link.textContent = 'Read More >'
             link.setAttribute('role', 'button')
-            link.href = `/gifts/${gift.id}`
+            link.href = `/toppings/${topping.id}`
             bottomContainer.appendChild(link)
 
             card.appendChild(topContainer)
@@ -44,20 +43,15 @@ const renderToppings = async () => {
     }
     else {
         const message = document.createElement('h2')
-        message.textContent = 'No Gifts Available 😞'
+        message.textContent = 'No Toppings Available 😞'
         mainContent.appendChild(message)
     }
 }
-
-
-
-// Call the renderGift function to display the gift details when the page loads
-
 const requestedUrl = window.location.href.split('/').pop();
 
 if (requestedUrl && requestedUrl !== 'index.html' && requestedUrl !== '') {
     window.location.href = '../404.html';
 } else {
-    renderGifts();
+    renderToppings();
 }
 
