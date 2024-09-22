@@ -29,8 +29,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
-
-<iframe src="https://drive.google.com/file/d/1veLvIMp_ggfG_ZPm4jUOn9Z1DqnQRSGd/preview" width="640" height="480" allow="autoplay"></iframe>
+[Watch the Video Walkthrough](https://drive.google.com/file/d/1veLvIMp_ggfG_ZPm4jUOn9Z1DqnQRSGd/view)
 
 ## License
 
