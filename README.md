@@ -30,10 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<iframe src='https://drive.google.com/file/d/1veLvIMp_ggfG_ZPm4jUOn9Z1DqnQRSGd/view' title='Video Walkthrough' width='' alt='Video Walkthrough'></iframe>
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with [Kap](https://getkap.co/) for macOS.
+<iframe src="https://drive.google.com/file/d/1veLvIMp_ggfG_ZPm4jUOn9Z1DqnQRSGd/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ## License
 
