@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
-[Watch the Video Walkthrough](https://drive.google.com/file/d/1YA6oI8pZFzsUqI5Bclxu-7hh_naOhOEY/view)
+[Watch the Video Walkthrough](https://drive.google.com/file/d/1kKWypCeMZOmuuTqrNPTBHo4sOlOKSTQd/view)
 
 ## License
 

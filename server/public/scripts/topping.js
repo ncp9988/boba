@@ -25,7 +25,7 @@ const renderTopping = async () => {
 
             // Set the text content for each topping detail
             document.getElementById('name').textContent = topping.name;
-            document.getElementById('pricePoint').textContent = `Price: ${topping.pricePoint}`;
+            document.getElementById('pricePoint').textContent = `Price: ${topping.pricepoint}`;
             document.getElementById('audience').textContent = `Recommend Drink: ${topping.audience}`;
 
             // Set the title of the page to include the topping's name
